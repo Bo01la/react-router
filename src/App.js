@@ -13,8 +13,12 @@ const routs = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
+      // {
+      //   path: "", // making this is the home oage
+      //   element: <Home />,
+      // },
       {
-        path: "",
+        index: true, // another way to set a page as the default for home page
         element: <Home />,
       },
       {
